@@ -1,3 +1,4 @@
+
 const db=supabase.createClient(APP_CONFIG.SUPABASE_URL,APP_CONFIG.SUPABASE_KEY);
 const langs=[['it','Italiano'],['en','Inglese'],['fr','Francese'],['es','Espanol'],['de','Tedesco'],['pt','Portoghese'],['ru','Russo'],['ar','Arabo'],['zh','Cinese'],['ja','Giapponese'],['ko','Coreano'],['pl','Polacco'],['sq','Albanese'],['ro','Rumeno'],['hu','Ungherese'],['nl','Olandese'],['hr','Croato'],['el','Greco'],['tr','Turco']];
 const allergens={gluten:'Glutine',crustaceans:'Crostacei',eggs:'Uova',fish:'Pesce',peanuts:'Arachidi',soy:'Soia',milk:'Latte e derivati',nuts:'Frutta a guscio',celery:'Sedano',mustard:'Senape',sesame:'Sesamo',sulphites:'Solfiti',lupin:'Lupini',molluscs:'Molluschi'};
