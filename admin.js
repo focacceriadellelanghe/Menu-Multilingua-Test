@@ -1,6 +1,5 @@
-
 const db=supabase.createClient(APP_CONFIG.SUPABASE_URL,APP_CONFIG.SUPABASE_KEY);
-const langs=[['it','Italiano'],['en','English'],['fr','Français'],['es','Español'],['de','Deutsch'],['pt','Português'],['ru','Русский'],['ar','العربية'],['zh','中文'],['ja','日本語'],['ko','한국어'],['pl','Polski'],['sq','Shqip'],['ro','Română'],['hu','Magyar'],['nl','Nederlands'],['hr','Hrvatski'],['el','Ελληνικά'],['tr','Türkçe']];
+const langs=[['it','Italiano'],['en','Inglese'],['fr','Francese'],['es','Espanol'],['de','Tedesco'],['pt','Portoghese'],['ru','Russo'],['ar','Arabo'],['zh','Cinese'],['ja','Giapponese'],['ko','Coreano'],['pl','Polacco'],['sq','Albanese'],['ro','Rumeno'],['hu','Ungherese'],['nl','Olandese'],['hr','Croato'],['el','Greco'],['tr','Turco']];
 const allergens={gluten:'Glutine',crustaceans:'Crostacei',eggs:'Uova',fish:'Pesce',peanuts:'Arachidi',soy:'Soia',milk:'Latte e derivati',nuts:'Frutta a guscio',celery:'Sedano',mustard:'Senape',sesame:'Sesamo',sulphites:'Solfiti',lupin:'Lupini',molluscs:'Molluschi'};
 const nuts={almond:'Mandorla',hazelnut:'Nocciola',walnut:'Noce',pistachio:'Pistacchio',pine_nut:'Pinolo',cashew:'Anacardio',pecan:'Noce pecan',brazil_nut:'Noce del Brasile',macadamia:'Macadamia'};
 let products=[], translations={}, current=null, filter='all';
