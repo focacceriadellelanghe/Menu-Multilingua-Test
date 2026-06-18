@@ -286,12 +286,12 @@
   <!-- MEZZA PORZIONE STRIP -->
   <div class="strip strip-mezza">
     <div class="strip-title">✂️ MEZZA PORZIONE</div>
-    <div class="strip-sub">1 trancio — tutte a 4.90 €</div>
+    <div class="strip-sub">1 trancio — tutte a 4,90 €</div>
   </div>
 
   <!-- BEST SELLERS -->
   <div class="section-header">
-    <div class="section-label">✦ BEST SELLERS ✦</div>
+    <div class="section-label">✦ BEST SELLER ✦</div>
   </div>
   <div class="section-rule"></div>
   <div id="best-sellers"><div class="loading-message">Caricamento menù…</div></div>
@@ -339,7 +339,7 @@
     const b=[];
     if(p.is_vegan) b.push('<span class="badge badge-vegan">Vegano</span>');
     else if(p.is_vegetarian) b.push('<span class="badge badge-veg">Vegetariano</span>');
-    if(p.is_lactose_free) b.push('<span class="badge badge-lf">Senza Lattosio</span>');
+    if(p.is_lactose_free) b.push('<span class="badge badge-lf">Senza lattosio</span>');
     if(p.is_spicy) b.push('<span class="badge badge-spicy">Piccante</span>');
     return b.length?'<div class="badges">'+b.join('')+'</div>':'';
   }
@@ -347,7 +347,7 @@
     if(!p.allergens?.length) return '';
     let vals=p.allergens.map(a=>allergenNames[a]||a);
     const i=p.allergens.indexOf('nuts');
-    if(i>=0 && p.nut_types?.length) vals[i]='Frutta a guscio ('+p.nut_types.map(n=>nutNames[n]||n).join(', ')+')';
+    if(i>=0 && p.nut_types?.length) vals[i]="Frutta a guscio ("+p.nut_types.map(n=>nutNames[n]||n).join(', ')+')';
     return '<div class="allergens-line"><span class="allergens-label">Allergeni:</span> '+esc(vals.join(', '))+'</div>';
   }
   function item(p, cls){
